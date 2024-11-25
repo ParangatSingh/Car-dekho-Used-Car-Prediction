@@ -1,36 +1,90 @@
-Car Dheko - Used Car Price Prediction Project
-Objective
-The project aims to develop a robust machine learning model for accurately predicting the prices of used cars. An interactive Streamlit web application is deployed to allow customers and sales representatives to input car details and receive instant price estimates.
+# **Car Dheko - Used Car Price Prediction Project**
 
-Problem Statement
-The goal is to enhance customer experience and streamline the pricing process by leveraging machine learning to predict used car prices based on various features such as make, model, year, and fuel type.
+## **Objective**
+Develop a robust machine learning model to accurately predict used car prices. Deploy an interactive Streamlit web application enabling customers and sales representatives to input car details and receive instant price estimates.
 
-Data and Approach
-Data Source: Historical data of 8,369 cars from CarDekho.
-Steps Involved:
-Data Preprocessing:
-Imputation for missing values, encoding categorical variables, scaling numerical features, and outlier removal.
-Exploratory Data Analysis (EDA):
-Key insights derived through visualizations like scatter plots, histograms, box plots, and correlation heatmaps.
-Feature Selection:
-Techniques include correlation analysis, feature importance from models, and domain expertise.
-Model Development:
-Algorithms tested include Linear Regression, Decision Trees, Random Forests, and Gradient Boosting. Random Forest performed best.
-Hyperparameter tuning using Grid Search and Random Search.
-Optimization:
-Feature engineering and regularization techniques (Lasso and Ridge Regression) to improve model performance.
-Model Evaluation
-The model was evaluated using metrics like MAE, MSE, RMSE, and R². Random Forest demonstrated the best performance with low error rates and high accuracy.
+---
 
-Streamlit Application
-Features:
-User-friendly interface with dropdowns, sliders, and buttons to input car details.
-Real-time price prediction using the trained model.
-Deployment:
-The app can be run locally or hosted on platforms like Streamlit Cloud or Heroku.
-Key Outcomes
-Accurate Model: Delivered a reliable predictive model with low error metrics.
-Comprehensive Analysis: Insights from EDA revealed valuable patterns, improving model efficiency.
-Interactive App: Developed a Streamlit application that makes the tool accessible to non-technical users.
-Thorough Documentation: Detailed methodology and results ensure transparency and ease of understanding.
-This project enhances decision-making for used car pricing while offering an intuitive platform for instant predictions.
+## **Problem Statement**
+Enhance customer experience and streamline the pricing process using machine learning to predict used car prices based on features like make, model, year, and fuel type.
+
+---
+
+## **Data and Approach**
+
+### **Data Source**
+- Historical dataset of **8,369 used cars** from CarDekho.
+
+### **Steps Involved**
+1. **Data Preprocessing**:
+   - Imputation for missing values.
+   - Encoding categorical variables.
+   - Scaling numerical features.
+   - Outlier removal.
+
+2. **Exploratory Data Analysis (EDA)**:
+   - Derived key insights using:
+     - **Scatter Plots**: Visualize relationships (e.g., price vs. mileage).
+     - **Histograms**: Understand distributions (e.g., engine size).
+     - **Box Plots**: Detect outliers and distribution shapes.
+     - **Correlation Heatmaps**: Identify relationships between features.
+
+3. **Feature Selection**:
+   - Techniques used:
+     - **Correlation Analysis**: Assess linear relationships with target variable.
+     - **Feature Importance**: Extract insights from Random Forest and Gradient Boosting models.
+     - **Domain Expertise**: Incorporate industry knowledge for logical feature selection.
+
+4. **Model Development**:
+   - Algorithms tested:
+     - **Linear Regression**
+     - **Decision Trees**
+     - **Random Forests**
+     - **Gradient Boosting**
+   - Best-performing model: **Random Forest**.
+   - Hyperparameter tuning: **Grid Search** and **Random Search** for optimization.
+
+5. **Optimization**:
+   - Feature Engineering:
+     - Create or transform features for better patterns.
+   - Regularization Techniques:
+     - **Lasso Regression** (L1 Regularization) for sparse models.
+     - **Ridge Regression** (L2 Regularization) to handle multicollinearity.
+
+---
+
+## **Model Evaluation**
+- Metrics used to evaluate performance:
+  - **Mean Absolute Error (MAE)**: Average magnitude of errors.
+  - **Mean Squared Error (MSE)**: Penalizes large errors more.
+  - **Root Mean Squared Error (RMSE)**: Measures accuracy with sensitivity to outliers.
+  - **R²**: Proportion of variance explained by the model.
+
+- **Best Model**: Random Forest demonstrated low MAE and RMSE with high R², indicating strong performance and reliability.
+
+---
+
+## **Streamlit Application**
+
+### **Features**
+- User-friendly interface with:
+  - Dropdowns, sliders, and buttons for easy input of car details.
+  - Real-time price predictions using the trained model.
+
+### **Deployment**
+- The application can be:
+  - Run locally using `streamlit run app.py`.
+  - Hosted on platforms like **Streamlit Cloud** or **Heroku**.
+
+---
+
+## **Key Outcomes**
+
+1. **Accurate Model**: Delivered a reliable predictive model with low error metrics.
+2. **Comprehensive Analysis**: Insights from EDA improved model efficiency and revealed valuable patterns.
+3. **Interactive App**: A Streamlit application accessible to non-technical users for instant predictions.
+4. **Thorough Documentation**: Detailed methodology and results ensure transparency and clarity.
+
+---
+
+This project enhances decision-making for used car pricing while providing an intuitive platform for real-time predictions.
